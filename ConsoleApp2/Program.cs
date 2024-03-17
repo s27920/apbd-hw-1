@@ -3,9 +3,6 @@ class Program
 {
     public static void Main(string[] args)
     {
-        int i = 0;
-        Console.WriteLine("Hello, World!");
-        Console.WriteLine(i);
         Console.WriteLine(GetMax(new []{3, 20, 7, 11, 15}));
     }
     
