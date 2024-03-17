@@ -6,7 +6,7 @@ class Program
         int i = 0;
         Console.WriteLine("Hello, World!");
         Console.WriteLine(i);
-        Console.WriteLine(avg(new []{3, 7, 11, 15, 20}));
+        Console.WriteLine(max(new []{3, 20, 7, 11, 15}));
     }
 
     static double avg(int[] arr)
@@ -20,5 +20,20 @@ class Program
         }
 
         return sum / counter;
+    }
+
+
+    static int max(int[] arr)
+    {
+        int max = Int32.MinValue;
+        foreach (int num in arr)
+        {
+            if (num >= max)
+            {
+                max = num;
+            }
+        }
+
+        return max;
     }
 }
