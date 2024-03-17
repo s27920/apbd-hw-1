@@ -13,16 +13,16 @@ class Program
     
     static int GetMax(int[] arr)
     {
-        int max = Int32.MinValue;
+        int evenNewerName = Int32.MinValue;
         foreach (int num in arr)
         {
-            if (num >= max)
+            if (num >= evenNewerName)
             {
-                max = num;
+                evenNewerName = num;
             }
         }
 
-        return max;
+        return evenNewerName;
     }
 
     static double GetAvg(int[] arr)
