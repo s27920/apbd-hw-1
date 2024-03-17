@@ -7,10 +7,26 @@ class Program
         Console.WriteLine("Hello, World!");
         Console.WriteLine(i);
         Console.WriteLine(GetMax(new []{3, 20, 7, 11, 15}));
+        Console.WriteLine(GetAvg(new []{3, 7, 11, 15, 20}));
     }
     
-
+    
     static int GetMax(int[] arr)
+    {
+        int max = Int32.MinValue;
+        foreach (int num in arr)
+        {
+            if (num >= max)
+            {
+                max = num;
+            }
+        }
+
+        return max;
+    }
+
+    static double GetAvg(int[] arr)
+
     {
         int max = Int32.MinValue;
         foreach (int num in arr)
